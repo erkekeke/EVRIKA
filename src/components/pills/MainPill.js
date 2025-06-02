@@ -1,5 +1,6 @@
 import {AppLayout} from "../../AppLayout";
 import React, { useState } from 'react';
+import {NavLink} from "react-router-dom";
 
 const resourcesCard = [
     {
@@ -92,12 +93,15 @@ function MainPill() {
                             Подключенные ресурсы
                         </p>
 
-                        <button id="connect-resource-button"
-                                className="btn d-flex align-items-center justify-content-center">
-                            <img src="/img/button-plus-icon.svg" alt=""/>
+                        {/* Кнопка подключения ресурса */}
+                        <NavLink to="/connect-resource" className="text-decoration-none">
+                            <button id="connect-resource-button"
+                                    className="btn d-flex align-items-center justify-content-center">
+                                <img src="/img/button-plus-icon.svg" alt=""/>
 
-                            <span className="button-text">Подключить ресурс</span>
-                        </button>
+                                <span className="button-text">Подключить ресурс</span>
+                            </button>
+                        </NavLink>
                     </div>
 
                     <div id="resourcesCardContainer" className="row g-20">
