@@ -1,0 +1,347 @@
+$background-grey: #F2F2F2;
+$border-radius-main: 10px;
+$padding-main: 20px;
+$text-color-grey: #3D3D3D80;
+$text-color-green: #5B9B15;
+$green-button-background-color: #88C62A;
+
+main {
+  background-color: $background-grey;
+  padding: 60px 0;
+
+  p {
+    margin: 0;
+  }
+
+  // Отступы между элементами для row в 20px
+  .row .g-20 {
+    --bs-gutter-x: 20px;
+    --bs-gutter-y: 20px;
+  }
+}
+
+.profile-panel-block {
+  border-radius: $border-radius-main;
+  padding: $padding-main;
+
+  .logo-block {
+    padding: 0 54px 20px 54px;
+    gap: 17.5px;
+    border-bottom: 1px solid #CFE7B8;
+
+    .logo-block-text {
+      font-weight: 500;
+      font-size: 24px;
+    }
+  }
+
+  .profile-info-block {
+    margin-top: 20px;
+
+    .profile-name {
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 125%;
+    }
+
+    .email-text {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 125%;
+      color: $text-color-grey;
+    }
+
+    .organization-name {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 125%;
+      color: $text-color-green;
+      margin-top: 20px;
+    }
+  }
+
+  .edit-profile-button {
+    font-size: 14px;
+    line-height: 100%;
+    color: $text-color-green;
+    margin-top: 20px;
+  }
+}
+
+.navigation-block {
+  border-radius: $border-radius-main;
+  margin-top: 20px;
+  background-color: #fff;
+
+  .navigation-item {
+    gap: 10px;
+    padding: 20px;
+    text-decoration: none;
+
+    &.active {
+      background-color: #CFE7B8;
+
+      .navigation-item-text {
+        font-weight: 600;
+      }
+    }
+    &:first-child {
+      border-radius: 10px 10px 0 0;
+    }
+
+    &:last-child {
+      border-radius: 0 0 10px 10px;
+    }
+
+    .navigation-item-text {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 125%;
+      color: #3D3D3D;
+    }
+  }
+
+  .navigation-sub-item {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 125%;
+    gap: 10px;
+    color: #3D3D3D;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .accordion-item {
+    padding: 20px;
+
+    .accordion-header {
+      .accordion-button {
+        cursor: default;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 125%;
+        color: #3D3D3D;
+        gap: 10px;
+      }
+    }
+    .accordion-body {
+      padding: 20px 20px 0 20px;
+      gap: 20px;
+    }
+    .accordion-button {
+      padding: 0;
+    }
+  }
+}
+
+
+// Общий контейнер для страниц
+.main-container {
+  .content-block {
+    border-radius: $border-radius-main;
+    padding: 20px;
+    background-color: #ffffff;
+  }
+
+  .content-block-title {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 115%;
+    color: #3D3D3D;
+  }
+}
+
+// Главная страница (пилл)
+#main-page {
+  #search-content-block {
+    .input-group {
+      margin-top: 20px;
+
+      .input-group-text {
+        border-radius: 10px 0 0 10px;
+        border: 1px solid #E2E2E2;
+        padding: 14px 10px 14px 15px;
+      }
+
+      .button-wrapper {
+        width: 258px;
+        border-top: 1px solid #E2E2E2;
+        border-bottom: 1px solid #E2E2E2;
+        border-radius: 0 8px 8px 0;
+
+        #search-button {
+          background-color: $green-button-background-color;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 100%;
+          padding: 0 25px;
+          border-radius: 8px;
+        }
+      }
+
+      input {
+        font-size: 14px;
+        line-height: 125%;
+        padding-left: 10px;
+        border-right: 0;
+
+
+        &::placeholder {
+          font-weight: 500;
+          color: $text-color-grey;
+        }
+
+        &:focus {
+          box-shadow: none;
+          border-color: #E2E2E2;
+        }
+      }
+    }
+  }
+
+  #connected-resources-content-block {
+    margin-top: 12px;
+
+    #connect-resource-button {
+      background-color: $green-button-background-color;
+      padding: 16px 46.5px;
+      gap: 10px;
+      color: white;
+      border-radius: 10px;
+
+      .button-text {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 100%;
+      }
+    }
+
+    #resourcesCardContainer {
+     padding-top: 20px;
+
+      .connected-resource-card {
+        background-color: $background-grey;
+        padding: 10px 15px;
+        border-radius: 10px;
+
+        .connected-resource-card-text {
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 125%;
+          color: #3D3D3D;
+        }
+      }
+    }
+  }
+
+  #search-form-code-content-block {
+    margin-top: 12px;
+
+    #copy-code-container {
+      padding-top: 20px;
+
+      #search-form-code-input {
+        background-color: $background-grey;
+        padding: 16px 15px;
+        border-radius: $border-radius-main;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 125%;
+        color: $text-color-grey;
+        border: none;
+      }
+
+      #copy-code-button {
+        background-color: $green-button-background-color;
+        padding: 0 17.5px;
+        border-radius: $border-radius-main;
+        border: 1px solid $green-button-background-color;
+        transition:
+                background-color 0.3s ease,
+                border-color 0.3s ease,
+                transform 0.2s ease;
+
+        &.copied {
+          background-color: #fff;
+          outline: 1px solid #5B9B15;
+
+          .button-text {
+            color: $text-color-green;
+            transition: color 0.3s ease;
+          }
+        }
+
+        .button-text {
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 100%;
+          color: white;
+          transition: color 0.3s ease;
+        }
+      }
+    }
+  }
+}
+
+#connect-resource-page {
+  .connection-status-block {
+    margin-top: 20px;
+
+    .connection-status-titles {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 125%;
+      color: #3D3D3D;
+    }
+
+    .connection-status-points {
+      margin-top: 10px;
+
+      .status-line {
+        height: 1px;
+        width: 46.33%;
+        background-color: #979797;
+
+        &.active {
+          background-color: #88C62A;
+        }
+      }
+
+      .point-icon.active {
+        circle:first-of-type { fill: #CFE7B8; }
+        circle:last-of-type  { fill: #88C62A; }
+      }
+    }
+  }
+
+  #choose-resource-block {
+    margin-top: 20px;
+
+    .choose-resource-select {
+      margin-top: 20px;
+
+      .css-13cymwt-control, .css-t3ipsp-control {
+        border-radius: 10px;
+        border: none;
+        background-color: #F2F2F2;
+
+        .css-hlgwow {
+          padding: 16px 15px;
+
+          .css-19bb58m {
+            padding: 0;
+          }
+          .css-19bb58m {
+            margin: 0;
+          }
+        }
+      }
+      .css-1jqq78o-placeholder {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 125%;
+        color: #979797;
+      }
+    }
+  }
+}
