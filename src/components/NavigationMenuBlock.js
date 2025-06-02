@@ -1,5 +1,5 @@
-import {NavLink} from "react-router-dom";
-import {useState} from "react";
+import {NavLink, useLocation} from "react-router-dom";
+import {useState, useEffect} from "react";
 
 const contentButtons = [
     {
@@ -65,46 +65,92 @@ const contentButtons = [
 ]
 
 function NavigationMenuItem(props) {
-    const [isHovered, setIsHovered] = useState(false);
-
+    const [isExpanded, setIsExpanded] = useState(false);
     const hasSubItems = props.buttonItems.subItems && props.buttonItems.subItems.length > 0;
+    const location = useLocation();
+    const [isActive, setIsActive] = useState(false);
+
+    // Проверяем, активен ли текущий путь или один из саб-элементов
+    useEffect(() => {
+        const checkActive = () => {
+            // Проверяем основной линк
+            if (location.pathname === props.buttonItems.link) {
+                return true;
+            }
+
+            // Проверяем саб-элементы
+            if (hasSubItems) {
+                return props.buttonItems.subItems.some(
+                    subItem => location.pathname === subItem.link
+                );
+            }
+
+            return false;
+        };
+
+        setIsActive(checkActive());
+
+        // Автоматически раскрываем аккордеон, если активен саб-элемент
+        if (hasSubItems) {
+            const shouldExpand = props.buttonItems.subItems.some(
+                subItem => location.pathname === subItem.link
+            );
+            setIsExpanded(shouldExpand);
+        }
+    }, [location.pathname, hasSubItems, props.buttonItems]);
+
+    const toggleAccordion = () => {
+        if (hasSubItems) {
+            setIsExpanded(!isExpanded);
+        }
+    };
 
     return (
-        <>
+        <div className={`navigation-item-wrapper ${hasSubItems ? 'has-subitems' : ''}`}>
             {hasSubItems ? (
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button
-                            class="accordion-button collapsed"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target={`#${props.buttonItems.id}`}
-                        >
-                            <img src={props.buttonItems.iconPath} alt=""/>
-                            {props.buttonItems.buttonText}
-                        </button>
-                    </h2>
-                    <div id={props.buttonItems.id} class="accordion-collapse collapse">
-                        <div class="accordion-body d-flex flex-column">
+                <>
+                    <div
+                        className={`navigation-item accordion-header d-flex align-items-center ${isExpanded ? 'expanded' : ''} ${isActive ? 'active' : ''}`}
+                        onClick={toggleAccordion}
+                    >
+                        <img src={props.buttonItems.iconPath} alt=""/>
+                        <span className="navigation-item-text">{props.buttonItems.buttonText}</span>
+                        {hasSubItems && (
+                            <img className={`accordion-arrow ${isExpanded ? 'expanded' : ''}`} src="/img/pills-icons/accordion-arrow.svg" alt=""/>
+                        )}
+                    </div>
+
+                    <div className={`accordion-content ${isExpanded ? 'expanded' : ''}`}>
+                        <div className="accordion-body d-flex flex-column">
                             {props.buttonItems.subItems.map((subItem, index) => (
-                                <NavLink to={subItem.link} className="navigation-sub-item d-flex" key={index}>
+                                <NavLink
+                                    to={subItem.link}
+                                    className={({isActive}) =>
+                                        `navigation-sub-item d-flex ${isActive ? 'active' : ''}`
+                                    }
+                                    key={index}
+                                    onClick={(e) => e.stopPropagation()}
+                                >
                                     <img src={subItem.iconPath} alt=""/>
-                                    <div>
-                                        {subItem.text}
-                                    </div>
+                                    <div>{subItem.text}</div>
                                 </NavLink>
                             ))}
                         </div>
                     </div>
-                </div>
+                </>
             ) : (
-                <NavLink to={props.buttonItems.link} className="navigation-item d-flex align-items-center">
+                <NavLink
+                    to={props.buttonItems.link}
+                    className={({isActive}) =>
+                        `navigation-item d-flex align-items-center ${isActive ? 'active' : ''}`
+                    }
+                    onClick={(e) => e.stopPropagation()}
+                >
                     <img src={props.buttonItems.iconPath} alt=""/>
                     <span className="navigation-item-text">{props.buttonItems.buttonText}</span>
-                    {hasSubItems && <span className="accordion-arrow">›</span>}
                 </NavLink>
             )}
-        </>
+        </div>
     );
 }
 
