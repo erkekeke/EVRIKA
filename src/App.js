@@ -6,6 +6,7 @@ import Support from "./components/pills/Support";
 import KnowledgeBase from "./components/pills/KnowledgeBase";
 import Logout from "./components/pills/Logout";
 import ConnectResource from "./components/pills/ConnectResource";
+
 import React from "react";
 
 function App() {

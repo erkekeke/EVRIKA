@@ -5,6 +5,10 @@ $text-color-grey: #3D3D3D80;
 $text-color-green: #5B9B15;
 $green-button-background-color: #88C62A;
 
+@font-face {
+  font-family: 'Montserrat', sans-serif;
+}
+
 main {
   background-color: $background-grey;
   padding: 60px 0;
@@ -17,6 +21,17 @@ main {
   .row .g-20 {
     --bs-gutter-x: 20px;
     --bs-gutter-y: 20px;
+  }
+
+  .d-flex.gap-10 {
+    gap: 10px;
+  }
+
+  .green-button {
+    background-color: $green-button-background-color;
+    border-radius: 10px;
+    border: 0;
+    color: #ffffff;
   }
 }
 
@@ -310,6 +325,37 @@ main {
 }
 
 #connect-resource-page {
+  .content-block-title {
+    color: #3D3D3D;
+
+    &.hidden {
+      color: #979797;
+    }
+  }
+
+  .accordion-arrow {
+    transition: transform 0.5s ease;
+    transform: rotate(0deg);
+
+    &.hidden {
+      transform: rotate(180deg);
+    }
+
+    &.disabled {
+      path {
+        fill: #979797;
+      }
+    }
+  }
+
+  .accordion-container {
+    display: block;
+
+    &.hidden {
+      display: none;
+    }
+  }
+
   .connection-status-block {
     margin-top: 20px;
 
@@ -344,10 +390,7 @@ main {
     margin-top: 20px;
 
     .choose-resource-select {
-      margin-top: 20px;
-
       .css-13cymwt-control, .css-t3ipsp-control {
-        border-radius: 10px;
         border: none;
         background-color: #F2F2F2;
 
@@ -362,11 +405,249 @@ main {
           }
         }
       }
+
+      .select__no-options {
+        font-size: 16px;
+        color: #979797;
+      }
+
       .css-1jqq78o-placeholder {
+        line-height: 125%;
+        color: #979797;
+      }
+
+      // Выпадающее меню
+      .css-1nmdiq5-menu {
+        box-shadow: none;
+        background-color: #F2F2F2;
+        border-radius: 0 0 10px 10px;
+
+        // Не выбранный элемент
+        .css-10wo9uf-option {
+          font-weight: 500;
+        }
+        // Выбранный элемент
+        .css-tr4s17-option {
+          background-color: #CFE7B8;
+          font-weight: 600;
+          color: #3D3D3D;
+        }
+        // Элемент с hover
+        .css-d7l1ni-option {
+          background-color: #F2F2F2;
+          font-size: 16px;
+          font-weight: 500;
+          cursor: pointer;
+        }
+        .css-10wo9uf-option, .css-tr4s17-option {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  #connection-setup-block {
+    margin-top: 20px;
+
+    .form-text {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 125%;
+      color: #3D3D3D;
+      margin-top: 10px;
+    }
+
+    .fields-block {
+      margin-top: 40px;
+
+      .form-label {
         font-weight: 500;
         font-size: 16px;
         line-height: 125%;
-        color: #979797;
+        color: #3D3D3D;
+        margin-bottom: 0;
+      }
+
+      .form-control {
+        margin-top: 10px;
+        border-radius: 10px;
+        padding: 17px 15px;
+        background-color: #F2F2F2;
+        border: 0;
+        font-size: 14px;
+        color: #3D3D3D;
+
+        &::placeholder {
+          color: #979797;
+          font-weight: 500;
+        }
+
+        &:focus {
+          box-shadow: none;
+        }
+      }
+
+      .info-block {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 125%;
+        color: $text-color-green;
+        gap: 5px;
+        margin-top: 11px;
+      }
+    }
+
+    .check-data-button {
+      border-radius: 10px;
+      color: white;
+      background-color: $green-button-background-color;
+      padding: 17.5px 64.5px;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 100%;
+      border: 0;
+      margin-top: 20px;
+      transition: all 0.3s ease;
+
+      &[disabled] {
+        background-color: #F2F2F2;
+        color: #3D3D3D;
+      }
+    }
+  }
+
+  #connection-status-block {
+    margin-top: 20px;
+
+    .accordion-container {
+      margin-top: 20px;
+
+
+      .status-title-block {
+        gap: 10px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 125%;
+        color: #3D3D3D;
+      }
+
+      .status-text {
+        margin-top: 5px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 125%;
+        color: #3D3D3D;
+      }
+
+      .status-buttons-block {
+        margin-top: 20px;
+
+        #try-again-button {
+          padding: 17.5px 20px;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 100%;
+        }
+      }
+
+      .close-button {
+        border-radius: 10px;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 100%;
+      }
+
+      #successful-block {
+        .close-button {
+          padding: 17.5px 20px;
+        }
+      }
+
+      #error-block {
+        .close-button {
+          padding: 16.5px 20px;
+          background-color: #fff;
+          border: 1px solid #88C62A;
+          color: #88C62A;
+        }
+
+        #tech-support-block {
+          cursor: pointer;
+          gap: 5px;
+          margin-top: 11px;
+          color: $text-color-green;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 125%;
+        }
+      }
+    }
+  }
+}
+
+#tech-support-modal {
+  .modal-content {
+    padding: 40px;
+    border: none;
+    border-radius: 10px;
+
+    .modal-header {
+      padding: 0;
+      border: 0;
+
+      .modal-title {
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 115%;
+        color: #3D3D3D;
+      }
+
+      .btn-close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+      }
+    }
+
+    .modal-body {
+      padding: 20px 0 0 0;
+
+      textarea {
+        border-radius: 10px;
+        border: 1px solid #E2E2E2;
+        padding: 10px 15px;
+        resize: none;
+
+        &:focus-visible {
+          outline: none;
+        }
+      }
+
+      .custom-file-button {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 125%;
+        color: $text-color-green;
+        gap: 5px;
+        cursor: pointer;
+        margin-top: 15px;
+      }
+
+      #send-button {
+        border-radius: 10px;
+        border: 1px solid #88C62A;
+        padding: 17.5px 70px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 100%;
+        color: #88C62A;
+        margin-top: 15px;
+        background-color: #fff;
+
+        &:hover {
+          background-color: #88C62A;
+          color: #fff;
+        }
       }
     }
   }

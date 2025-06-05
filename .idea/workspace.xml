@@ -4,9 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dfee0197-84ac-4921-a091-3d2856d635eb" name="Changes" comment="add main page">
+    <list default="true" id="dfee0197-84ac-4921-a091-3d2856d635eb" name="Changes" comment="Добавил ссылку для кнопки подключения ресурса на главной странице">
+      <change afterPath="$PROJECT_DIR$/public/img/connect-resource/close-modal-icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/connect-resource/status-error-icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/connect-resource/status-successful-icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/connect-resource/techsupport-icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/connect-resource/upload-icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/info-icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/temp/line-md_loading-twotone-loop.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pills/MainPill.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pills/MainPill.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/connect-resource/Group 2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pills/ConnectResource.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pills/ConnectResource.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/App.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,21 +57,24 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/baxai/Desktop/EVRIKA",
+    "last_opened_file_path": "C:/Users/baxai/Desktop/EVRIKA/public/img/connect-resource",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors",
+    "ts.external.directory.path": "C:\\Users\\baxai\\OneDrive\\Рабочий стол\\PHP-STORM\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\baxai\Desktop\EVRIKA\public\img\connect-resource" />
+      <recent name="C:\Users\baxai\Desktop\EVRIKA\public\img\temp" />
+      <recent name="C:\Users\baxai\Desktop\EVRIKA\public\img" />
       <recent name="C:\Users\Ерке\Desktop\EVRIKA\public\img\pills-icons" />
       <recent name="C:\Users\Yuri\Desktop\EVRIKA\public\img\connect-resource" />
-      <recent name="C:\Users\Yuri\Desktop\EVRIKA\public\img" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -82,7 +98,10 @@
       <workItem from="1748516848682" duration="8891000" />
       <workItem from="1748605298122" duration="6879000" />
       <workItem from="1748846350859" duration="11000" />
-      <workItem from="1748846369091" duration="680000" />
+      <workItem from="1748846369091" duration="17480000" />
+      <workItem from="1748930086018" duration="4515000" />
+      <workItem from="1748938204380" duration="8750000" />
+      <workItem from="1749110010772" duration="8571000" />
     </task>
     <task id="LOCAL-00001" summary="add main page">
       <option name="closed" value="true" />
@@ -92,7 +111,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748525978194</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Добавил ссылку для кнопки подключения ресурса на главной странице">
+      <option name="closed" value="true" />
+      <created>1748847230349</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1748847230349</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -111,7 +138,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add main page" />
-    <option name="LAST_COMMIT_MESSAGE" value="add main page" />
+    <MESSAGE value="Добавил ссылку для кнопки подключения ресурса на главной странице" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавил ссылку для кнопки подключения ресурса на главной странице" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
