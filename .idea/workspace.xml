@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dfee0197-84ac-4921-a091-3d2856d635eb" name="Changes" comment="Разложил иконки по нормальным путям">
-      <change afterPath="$PROJECT_DIR$/src/components/pills/ConnectedResourceCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NavigationMenuBlock.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavigationMenuBlock.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pills/MainPill.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pills/MainPill.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pills/UnifiedSearch.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pills/ConnectedResourcesList.js" afterDir="false" />
-    </list>
+    <list default="true" id="dfee0197-84ac-4921-a091-3d2856d635eb" name="Changes" comment="Добавил страницу Списка подключенных ресурсов" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -109,7 +102,7 @@
       <workItem from="1748846369091" duration="17480000" />
       <workItem from="1748930086018" duration="4515000" />
       <workItem from="1748938204380" duration="8750000" />
-      <workItem from="1749110010772" duration="10117000" />
+      <workItem from="1749110010772" duration="10425000" />
     </task>
     <task id="LOCAL-00001" summary="add main page">
       <option name="closed" value="true" />
@@ -143,7 +136,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749125766361</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Добавил страницу Списка подключенных ресурсов">
+      <option name="closed" value="true" />
+      <created>1749126447210</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1749126447210</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,7 +166,8 @@
     <MESSAGE value="Добавил ссылку для кнопки подключения ресурса на главной странице" />
     <MESSAGE value="Доделал страницу подключения ресурсов" />
     <MESSAGE value="Разложил иконки по нормальным путям" />
-    <option name="LAST_COMMIT_MESSAGE" value="Разложил иконки по нормальным путям" />
+    <MESSAGE value="Добавил страницу Списка подключенных ресурсов" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавил страницу Списка подключенных ресурсов" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -4,7 +4,7 @@ function Logout () {
     return (
         <AppLayout>
             <div style={{ width: '500px', height: '500px', backgroundColor: 'white', fontSize: '60px' }}>
-                ВЫХОД
+                ВЫХОДА НЕТ И НЕ БУДЕТ
             </div>
         </AppLayout>
     );
