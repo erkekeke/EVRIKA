@@ -190,6 +190,23 @@ main {
     line-height: 115%;
     color: #3D3D3D;
   }
+
+  #resourcesCardContainer {
+    padding-top: 20px;
+
+    .connected-resource-card {
+      background-color: $background-grey;
+      padding: 10px 15px;
+      border-radius: 10px;
+
+      .connected-resource-card-text {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 125%;
+        color: #3D3D3D;
+      }
+    }
+  }
 }
 
 // Главная страница (пилл)
@@ -254,23 +271,6 @@ main {
         font-weight: 600;
         font-size: 14px;
         line-height: 100%;
-      }
-    }
-
-    #resourcesCardContainer {
-     padding-top: 20px;
-
-      .connected-resource-card {
-        background-color: $background-grey;
-        padding: 10px 15px;
-        border-radius: 10px;
-
-        .connected-resource-card-text {
-          font-weight: 600;
-          font-size: 16px;
-          line-height: 125%;
-          color: #3D3D3D;
-        }
       }
     }
   }

@@ -1,6 +1,7 @@
 import {AppLayout} from "../../AppLayout";
 import React, { useState } from 'react';
 import {NavLink} from "react-router-dom";
+import ConnectedResourceCard from "./ConnectedResourceCard";
 
 const resourcesCard = [
     {
@@ -24,16 +25,6 @@ const resourcesCard = [
         linkPath: '/img/temp/ololo.svg',
     },
 ]
-
-function ConnectedResourceCard(props) {
-    return (
-        <div className="connected-resource-card d-flex align-items-center justify-content-between">
-            <span className="connected-resource-card-text">{props.resourceCardItems.name}</span>
-
-            <img src={props.resourceCardItems.linkPath} alt=""/>
-        </div>
-    );
-}
 
 function MainPill() {
     const [isCopied, setIsCopied] = useState(false);

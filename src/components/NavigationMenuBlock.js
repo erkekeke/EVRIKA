@@ -21,7 +21,7 @@ const contentButtons = [
             },
             {
                 text: 'Список подключенных ресурсов',
-                link: '/resources-list',
+                link: '/connected-resources-list',
                 iconPath: '/img/pills-icons/resources-list-icon-pill.svg'
             }
         ]

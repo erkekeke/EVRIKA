@@ -4,22 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dfee0197-84ac-4921-a091-3d2856d635eb" name="Changes" comment="Доделал страницу подключения ресурсов">
+    <list default="true" id="dfee0197-84ac-4921-a091-3d2856d635eb" name="Changes" comment="Разложил иконки по нормальным путям">
+      <change afterPath="$PROJECT_DIR$/src/components/pills/ConnectedResourceCard.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/accordion-close.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/connect-resource/accordion-close.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/connect-resource-icon-pill.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/pills-icons/connect-resource-icon-pill.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/customer-support-icon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/pills-icons/customer-support-icon.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/documentation-icon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/pills-icons/documentation-icon.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/exit-to-app-icon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/pills-icons/exit-to-app-icon.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/get-key-code-icon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/pills-icons/get-key-code-icon.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/info-icon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/connect-resource/info-icon.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/library-seach-icon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/pills-icons/library-seach-icon.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/main-profile-panel-icon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/pills-icons/main-profile-panel-icon.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/pill-search-icon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/pills-icons/pill-search-icon.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/resources-add-icon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/pills-icons/resources-add-icon.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/resources-list-icon-pill.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/pills-icons/resources-list-icon-pill.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/NavigationMenuBlock.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavigationMenuBlock.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pills/ConnectResource.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pills/ConnectResource.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pills/MainPill.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pills/MainPill.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pills/UnifiedSearch.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pills/ConnectedResourcesList.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,6 +80,7 @@
       <recent name="C:\Users\Yuri\Desktop\EVRIKA\public\img\connect-resource" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\baxai\Desktop\EVRIKA\public\img" />
       <recent name="C:\Users\baxai\Desktop\EVRIKA\public\img\pills-icons" />
       <recent name="C:\Users\baxai\Desktop\EVRIKA\public\img\connect-resource" />
     </key>
@@ -117,7 +109,7 @@
       <workItem from="1748846369091" duration="17480000" />
       <workItem from="1748930086018" duration="4515000" />
       <workItem from="1748938204380" duration="8750000" />
-      <workItem from="1749110010772" duration="9503000" />
+      <workItem from="1749110010772" duration="10117000" />
     </task>
     <task id="LOCAL-00001" summary="add main page">
       <option name="closed" value="true" />
@@ -143,7 +135,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749125268664</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Разложил иконки по нормальным путям">
+      <option name="closed" value="true" />
+      <created>1749125766361</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1749125766361</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -164,7 +164,8 @@
     <MESSAGE value="add main page" />
     <MESSAGE value="Добавил ссылку для кнопки подключения ресурса на главной странице" />
     <MESSAGE value="Доделал страницу подключения ресурсов" />
-    <option name="LAST_COMMIT_MESSAGE" value="Доделал страницу подключения ресурсов" />
+    <MESSAGE value="Разложил иконки по нормальным путям" />
+    <option name="LAST_COMMIT_MESSAGE" value="Разложил иконки по нормальным путям" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
