@@ -4,61 +4,61 @@ import {useState, useEffect} from "react";
 const contentButtons = [
     {
         id: 'main',
-        iconPath: '/img/main-profile-panel-icon.svg',
+        iconPath: '/img/pills-icons/main-profile-panel-icon.svg',
         buttonText: 'Главная',
         link: '/main',
     },
     {
         id: 'connecting-resources',
-        iconPath: '/img/resources-add-icon.svg',
+        iconPath: '/img/pills-icons/resources-add-icon.svg',
         buttonText: 'Подключение ресурсов',
         link: '/connecting-resources',
         subItems: [
             {
                 text: 'Подключить ресурс',
                 link: '/connect-resource',
-                iconPath: '/img/connect-resource-icon-pill.svg'
+                iconPath: '/img/pills-icons/connect-resource-icon-pill.svg'
             },
             {
                 text: 'Список подключенных ресурсов',
                 link: '/resources-list',
-                iconPath: '/img/resources-list-icon-pill.svg'
+                iconPath: '/img/pills-icons/resources-list-icon-pill.svg'
             }
         ]
     },
     {
         id: 'unified-search',
-        iconPath: '/img/pill-search-icon.svg',
+        iconPath: '/img/pills-icons/pill-search-icon.svg',
         buttonText: 'Единый поиск',
         link: '/unified-search',
         subItems: [
             {
                 text: 'Поиск по библиотеке',
                 link: '/library-search',
-                iconPath: '/img/library-seach-icon.svg'
+                iconPath: '/img/pills-icons/library-seach-icon.svg'
             },
             {
                 text: 'Получить код-ключ',
                 link: '/get-key-code',
-                iconPath: '/img/get-key-code-icon.svg'
+                iconPath: '/img/pills-icons/get-key-code-icon.svg'
             }
         ]
     },
     {
         id: 'support',
-        iconPath: '/img/customer-support-icon.svg',
+        iconPath: '/img/pills-icons/customer-support-icon.svg',
         buttonText: 'Поддержка',
         link: '/support',
     },
     {
         id: 'knowledge-base',
-        iconPath: '/img/documentation-icon.svg',
+        iconPath: '/img/pills-icons/documentation-icon.svg',
         buttonText: 'База знаний',
         link: '/knowledge-base',
     },
     {
         id: 'logout',
-        iconPath: '/img/exit-to-app-icon.svg',
+        iconPath: '/img/pills-icons/exit-to-app-icon.svg',
         buttonText: 'Выйти',
         link: '/logout',
     },
@@ -116,7 +116,7 @@ function NavigationMenuItem(props) {
                         <img src={props.buttonItems.iconPath} alt=""/>
                         <span className="navigation-item-text">{props.buttonItems.buttonText}</span>
                         {hasSubItems && (
-                            <img className={`accordion-arrow ${isExpanded ? 'expanded' : ''}`} src="/img/pills-icons/accordion-arrow.svg" alt=""/>
+                            <img className={`accordion-arrow ${isExpanded ? 'expanded' : ''}`} src="/img/accordion-arrow.svg" alt=""/>
                         )}
                     </div>
 

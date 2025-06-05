@@ -248,7 +248,7 @@ function ConnectionSetupBlock({isDisabled, onDataSubmit}) {
                                         to=""
                                         className="info-block d-inline-flex align-items-center text-decoration-none"
                                     >
-                                        <img src="/img/info-icon.svg" alt=""/>
+                                        <img src="/img/connect-resource/info-icon.svg" alt=""/>
                                         Где взять данные?
                                     </NavLink>
                                 </div>
