@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dfee0197-84ac-4921-a091-3d2856d635eb" name="Changes" comment="Добавил страницу Списка подключенных ресурсов" />
+    <list default="true" id="dfee0197-84ac-4921-a091-3d2856d635eb" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/public/img/library-search/content-arrow.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/library-search/download-icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/library-search/show-more-icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/temp/lan-icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pills/LibrarySearch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/App.scss" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,18 +39,18 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "erkekeke"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;erkekeke&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/erkekeke/EVRIKA.git",
-    "accountId": "82a3cac9-a6af-432f-a6e1-633d039e7cff"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/erkekeke/EVRIKA.git&quot;,
+    &quot;accountId&quot;: &quot;82a3cac9-a6af-432f-a6e1-633d039e7cff&quot;
   }
-}]]></component>
+}</component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="C:\xampp\php\php.exe" />
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
@@ -53,7 +64,7 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/baxai/Desktop/EVRIKA/public/img/connect-resource",
+    "last_opened_file_path": "C:/Users/baxai/Desktop/EVRIKA",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -66,11 +77,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\baxai\Desktop\EVRIKA\public\img\connect-resource" />
+      <recent name="C:\Users\baxai\Desktop\EVRIKA\public\img\library-search" />
       <recent name="C:\Users\baxai\Desktop\EVRIKA\public\img\temp" />
+      <recent name="C:\Users\baxai\Desktop\EVRIKA\public\img\connect-resource" />
       <recent name="C:\Users\baxai\Desktop\EVRIKA\public\img" />
       <recent name="C:\Users\Ерке\Desktop\EVRIKA\public\img\pills-icons" />
-      <recent name="C:\Users\Yuri\Desktop\EVRIKA\public\img\connect-resource" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\baxai\Desktop\EVRIKA\public\img" />
@@ -102,7 +113,14 @@
       <workItem from="1748846369091" duration="17480000" />
       <workItem from="1748930086018" duration="4515000" />
       <workItem from="1748938204380" duration="8750000" />
-      <workItem from="1749110010772" duration="10425000" />
+      <workItem from="1749110010772" duration="12249000" />
+      <workItem from="1749450538585" duration="13723000" />
+      <workItem from="1749539990082" duration="4045000" />
+      <workItem from="1749546490885" duration="25000" />
+      <workItem from="1749556735421" duration="450000" />
+      <workItem from="1750139627723" duration="40000" />
+      <workItem from="1750154678411" duration="5760000" />
+      <workItem from="1750403797784" duration="12780000" />
     </task>
     <task id="LOCAL-00001" summary="add main page">
       <option name="closed" value="true" />
@@ -144,7 +162,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749126447210</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="ВЫХОДА НЕТ И НЕ БУДЕТ">
+      <option name="closed" value="true" />
+      <created>1749126919460</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1749126919460</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,7 +193,9 @@
     <MESSAGE value="Доделал страницу подключения ресурсов" />
     <MESSAGE value="Разложил иконки по нормальным путям" />
     <MESSAGE value="Добавил страницу Списка подключенных ресурсов" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавил страницу Списка подключенных ресурсов" />
+    <MESSAGE value="ВЫХОДА НЕТ И НЕ БУДЕТ" />
+    <MESSAGE value="Страница поиска по библиотеке" />
+    <option name="LAST_COMMIT_MESSAGE" value="Страница поиска по библиотеке" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

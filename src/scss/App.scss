@@ -5,17 +5,12 @@ $text-color-grey: #3D3D3D80;
 $text-color-green: #5B9B15;
 $green-button-background-color: #88C62A;
 
-@font-face {
-  font-family: 'Montserrat', sans-serif;
-}
-
 main {
+  font-family: 'Montserrat', sans-serif;
   background-color: $background-grey;
   padding: 60px 0;
 
-  p {
-    margin: 0;
-  }
+  p { margin: 0; }
 
   // Отступы между элементами для row в 20px
   .row .g-20 {
@@ -35,6 +30,7 @@ main {
   }
 }
 
+// Навигация по сайту
 .profile-panel-block {
   border-radius: $border-radius-main;
   padding: $padding-main;
@@ -174,7 +170,6 @@ main {
     }
   }
 }
-
 
 // Общий контейнер для страниц
 .main-container {
@@ -324,6 +319,7 @@ main {
   }
 }
 
+// Страница подключения ресурса
 #connect-resource-page {
   .content-block-title {
     color: #3D3D3D;
@@ -585,6 +581,7 @@ main {
   }
 }
 
+// Модалка тех-поддержки
 #tech-support-modal {
   .modal-content {
     padding: 40px;
@@ -648,6 +645,283 @@ main {
           background-color: #88C62A;
           color: #fff;
         }
+      }
+    }
+  }
+}
+
+// Поиск по библиотеке
+#library-search {
+  .nav {
+    margin-top: 20px;
+    gap: 20px;
+
+    .nav-item {
+      flex: 1;
+
+      .nav-link {
+        width: 100%;
+        padding: 15px 50px;
+        border-radius: 10px;
+        color: #3D3D3D;
+        border: 1px solid $green-button-background-color;;
+
+        &.active {
+          color: white;
+          background-color: $green-button-background-color;
+        }
+      }
+    }
+  }
+
+  // Инпут
+  .input-group {
+    margin-top: 20px;
+
+    .form-control {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 125%;
+      color: #3D3D3D;
+      border-radius: 10px 0 0 10px;
+      border-right: 0;
+      padding: 16px 15px;
+
+      &::placeholder {
+        color: #979797;
+        font-weight: 500;
+      }
+
+      &:focus {
+        box-shadow: none;
+        border-color: #E2E2E2;
+      }
+    }
+
+    .input-group-append #search-button {
+      padding: 13px 15px;
+      border-radius: 0 10px 10px 0;
+      border: 1px solid #E2E2E2;
+      border-left: 0;
+    }
+  }
+
+  .publications-block {
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 125%;
+
+      span {
+        font-weight: 700;
+      }
+    }
+
+    .publications-block-content {
+      display: none;
+      margin-top: 20px;
+
+      &.opened {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+    }
+
+    .show-more-button {
+      color: $text-color-green;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 125%;
+      gap: 10px;
+      background-color: #fff;
+      border: none;
+      padding: 0;
+
+      &:active {
+        border: none;
+      }
+    }
+  }
+
+  #books-block {
+    margin-top: 40px;
+  }
+
+  #magazines {
+    margin-top: 20px;
+  }
+
+  // Карточка книги
+  .book-card {
+    padding: 15px;
+    border: 1px solid #E2E2E2;
+    border-radius: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+
+    &.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .book-header {
+      gap: 20px;
+
+      .book-title {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 125%;
+        color: #3D3D3D;
+      }
+
+      .download-button {
+        cursor: pointer;
+        padding: 0;
+      }
+    }
+
+    .book-content {
+      margin-top: 15px;
+
+      .authors-block, .publishing-house-block, .year-block {
+        color: #979797;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 125%;
+
+        span {
+          font-weight: 600;
+        }
+      }
+
+      .publishing-house-block {
+        margin-top: 5px;
+      }
+
+      .description-block {
+        margin-top: 15px;
+
+        .description {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 125%;
+          color: #3D3D3D;
+        }
+      }
+    }
+  }
+
+  #filters {
+    gap: 25px;
+
+    .filter-title {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 100%;
+      color: #3D3D3D;
+      margin-bottom: 15px;
+    }
+
+    #filter-by-sourses-block {
+      #source-filter-element {
+        .custom-checkbox {
+          display: flex;
+          align-items: center;
+          position: relative;
+          padding-left: 30px;
+          cursor: pointer;
+          user-select: none;
+          /* Добавляем выравнивание по центру для всего элемента */
+          line-height: 1.5;
+        }
+
+        .custom-checkbox input {
+          position: absolute;
+          opacity: 0;
+          cursor: pointer;
+          height: 0;
+          width: 0;
+        }
+
+        .checkmark {
+          position: absolute;
+          top: 50%; /* Позиционируем по вертикали на 50% */
+          left: 0;
+          height: 20px;
+          width: 20px;
+          background-color: #FFFFFF;
+          border-radius: 2px;
+          transition: all 0.3s;
+          border: 1px solid #979797;
+          transform: translateY(-50%); /* Сдвигаем вверх на половину своей высоты */
+        }
+
+        .custom-checkbox input:checked ~ .checkmark {
+          background-color: #5B9B15;
+        }
+
+        .checkmark:after {
+          content: "";
+          position: absolute;
+          display: none;
+        }
+
+        .custom-checkbox input:checked ~ .checkmark:after {
+          display: block;
+        }
+
+        .custom-checkbox .checkmark:after {
+          left: 7px;
+          top: 3px;
+          width: 5px;
+          height: 10px;
+          border: solid white;
+          border-width: 0 2px 2px 0;
+          transform: rotate(45deg);
+        }
+      }
+    }
+
+    #filter-by-year-publication {
+      // DatePicker
+      .react-datepicker__input-container input {
+        border-radius: 14px;
+        border: 1px solid #F2F2F2;
+        padding: 11.5px 16px;
+        font-size: 14px;
+        
+        &::placeholder { color: #979797; }
+        &:focus { outline: none; }
+      }
+      .react-datepicker {
+        .react-datepicker__header {
+          background-color: #88C62A;
+          color: white;
+
+          .react-datepicker__current-month, .react-datepicker__day-name {
+            color: white;
+          }
+        }
+
+        .react-datepicker__navigation-icon::before {
+          border-color: white;
+        }
+
+        .react-datepicker__day--selected {
+          background-color: #88C62A;
+          color: white;
+        }
+
+        .react-datepicker__day--keyboard-selected {
+          background-color: white;
+        }
+
+        //.react-datepicker__day--keyboard-selected {
+        //  background-color: #88C62A;
+        //  color: white;
+        //}
       }
     }
   }

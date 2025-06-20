@@ -6,6 +6,10 @@ import Support from "./components/pills/Support";
 import KnowledgeBase from "./components/pills/KnowledgeBase";
 import Logout from "./components/pills/Logout";
 import ConnectResource from "./components/pills/ConnectResource";
+import LibrarySearch from "./components/pills/LibrarySearch";
+import 'primereact/resources/primereact.min.css'; // стили
+import 'primereact/resources/themes/lara-light-indigo/theme.css';
+import '@fontsource/montserrat';
 
 import React from "react";
 
@@ -17,6 +21,7 @@ function App() {
                 <Route path="/main" element={<MainPill />} />
                 <Route path="/connect-resource" element={<ConnectResource />} />
                 <Route path="/connected-resources-list" element={<ConnectedResourcesList />} />
+                <Route path="/library-search" element={<LibrarySearch />} />
                 <Route path="/support" element={<Support />} />
                 <Route path="/knowledge-base" element={<KnowledgeBase />} />
                 <Route path="/logout" element={<Logout />} />
